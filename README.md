@@ -6,7 +6,6 @@ A full-stack web application that helps Singapore residents assess whether a res
 
 ## Table of Contents
 
-- [Live Demo](#live-demo)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
@@ -97,8 +96,8 @@ hdb-checker/
 ### 1. Clone the repository
 
 ```bash
-git clone https://gitlab.com/your-username/hdb-checker.git
-cd hdb-checker
+git clone https://github.com/bintv/HDBChecker.git
+cd HDBChecker
 ```
 
 ### 2. Start the backend
