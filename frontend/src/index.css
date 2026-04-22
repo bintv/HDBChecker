@@ -1,0 +1,77 @@
+/* ─── Design tokens — light mode ─────────────────────────────────────────── */
+:root {
+  --color-bg: #f5f5f3;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8f8f6;
+  --color-surface-hover: #f2f2f0;
+  --color-border: #e4e4e0;
+  --color-text: #18181a;
+  --color-text-secondary: #4a4a52;
+  --color-text-muted: #8a8a96;
+  --color-accent: #1a56db;
+
+  --color-success: #1a7f4b;
+  --color-success-bg: #edfaf3;
+  --color-success-border: #b6edcf;
+
+  --color-danger: #c0392b;
+  --color-danger-bg: #fef2f1;
+  --color-danger-border: #fbc8c4;
+
+  --color-warning: #b45309;
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #fde68a;
+}
+
+/* ─── Dark mode ──────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111113;
+    --color-surface: #1c1c1f;
+    --color-surface-alt: #242428;
+    --color-surface-hover: #2a2a2f;
+    --color-border: #2e2e34;
+    --color-text: #f0f0f2;
+    --color-text-secondary: #a8a8b4;
+    --color-text-muted: #6a6a7a;
+    --color-accent: #4d7cff;
+
+    --color-success: #3ecf7e;
+    --color-success-bg: #0d2a1c;
+    --color-success-border: #1a4a30;
+
+    --color-danger: #f56565;
+    --color-danger-bg: #2d1212;
+    --color-danger-border: #5a1e1e;
+
+    --color-warning: #f6ad55;
+    --color-warning-bg: #2d1f08;
+    --color-warning-border: #5a3a10;
+  }
+}
+
+/* ─── Reset & base ───────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, select, button, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a8a96' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px !important;
+}
